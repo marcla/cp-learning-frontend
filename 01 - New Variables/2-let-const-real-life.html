@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>let and const real world</title>
+</head>
+<body>
+<script>
+  // const name = 'luigi';
+  
+  // not in the global scope
+  /* (function () {
+    const name = 'luigi';
+    console.log(name);
+  })(); */
+
+  // block scope
+  /* {
+    const name = 'luigi';
+  } */
+
+  /* for(var i = 0; i < 10; i++) {
+    console.log(i);
+    
+    // setTimeout(function() {
+    //   console.log('The number is ' + i);
+    // },1000);
+  } */
+  
+  /* for(let i = 0; i < 10; i++) {
+    console.log(i);
+    
+    setTimeout(function() {
+      console.log('The number is ' + i);
+    },1000);
+  } */
+
+</script>
+</body>
+</html>

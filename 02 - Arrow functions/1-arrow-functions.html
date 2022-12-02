@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arrow functions → → </title>
+</head>
+<body>
+<script>
+  /**
+   * Arrow functions don't have their own bindings to this, arguments, 
+   * or super, and should not be used as methods.
+   */
+
+  const names = ['luigi', 'albert', 'dantès'];
+
+  /* const fullNames = names.map(function(name) {
+    // return name + " suffix";
+    return `${name} suffix`;
+  }); */
+
+  /* const fullNames2 = names.map((name) => {
+    return `${name} suffix`;
+  }); */
+
+  /* const fullNames3 = names.map(name => {
+    return `${name} suffix`;
+  }); */
+
+  // can i remore square?
+  /* const fullNames4 = names.map(name => `${name} suffix`); */
+
+  /* const fullNames5 = names.map(() => `cool suffix`); */
+
+  /* const sayMyName = (name) => {
+    alert(`Hello ${name}!`)
+  }
+
+  sayMyName('Claudio'); */
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maps!</title>
+  <style>
+    button {
+      font-size: 50px;
+      margin:10px;
+    }
+  </style>
+</head>
+<body>
+
+<button>Snakes 🐍</button>
+<button>Cry 😂</button>
+<button>Ice Cream 🍦</button>
+<button>Flamin' 🔥</button>
+<button>Dancer 💃</button>
+
+<script>
+  /* const clickCounts = {
+    button1: 0,
+    button2: 0,
+    button3: 0,
+    button4: 0,
+    // ...
+  } */
+
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+  const clickCounts = new Map();
+  const buttons = document.querySelectorAll('button');
+
+  buttons.forEach(button => {
+    clickCounts.set(button, 0);
+    
+    /* button.addEventListener('click', function() {
+      const val = clickCounts.get(this);
+
+      clickCounts.set(this, val + 1);
+      console.log(clickCounts);
+    }); */
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Destructuring!</title>
+</head>
+<body>
+<script>
+  const person = {
+    first: 'Thomas',
+    last: 'Peterson',
+    country: 'Usa',
+    city: 'Worcester',
+    twitter: '@peterson'
+  };
+
+  const { first, last, twitter } = person;
+  
+  /* --- */
+
+  /* const thom = {
+    first: 'Thomas',
+    last: 'Peterson',
+    links: {
+      social: {
+        twitter: 'https://twitter.com/peterson',
+        facebook: 'https://facebook.com/peterson',
+      },
+      web: {
+        blog: 'https://thomas-peterson.com'
+      }
+    }
+  };
+
+  const { twitter: tweet, facebook: fb } = thom.links.social; */
+
+  /* --- */
+
+  /* const settings = { width: 300, color: 'black' }  // height, fontSize
+  const { width = 100, height = 100, color = 'blue', fontSize = 25} = settings; */
+
+</script>
+</body>
+</html>
